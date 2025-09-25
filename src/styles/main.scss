@@ -1,8 +1,7 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
-@import 'button';
-@import 'icon';
-@import 'page';
-@import 'container';
-@import 'top-bar';
+
+body {
+  background: $c-gray;
+}
