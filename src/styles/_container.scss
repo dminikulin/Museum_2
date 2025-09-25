@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-inline: 20px;
+  column-gap: 20px;
+
+  @include on-tablet {
+    grid-template-columns: repeat(6, 1fr);
+    padding-inline: 39px;
+    column-gap: 30px;
+  }
+
+  @include on-desktop {
+    grid-template-columns: repeat(12, 1fr);
+    padding-inline: 55px;
+  }
+}
