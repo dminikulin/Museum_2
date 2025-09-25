@@ -1,0 +1,17 @@
+.icon {
+  display: block;
+  background-size: contain;
+  background-position: center;
+
+  &--dropdown {
+    background-image: url(../images/icons/dropdown.svg);
+  }
+
+  &--menu {
+    background-image: url(../images/icons/menu.svg);
+  }
+
+  &--close {
+    background-image: url(../images/icons/close.svg);
+  }
+}
