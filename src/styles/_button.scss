@@ -1,4 +1,6 @@
 .button {
+  box-sizing: border-box;
+
   @extend %button-text;
 
   &--primary {

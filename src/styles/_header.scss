@@ -14,6 +14,7 @@
     &--text {
       display: flex;
       flex-direction: column;
+      color: $color-white;
 
       p:first-of-type {
         padding-bottom: 10px;

@@ -2,6 +2,7 @@
   display: block;
   background-size: contain;
   background-position: center;
+  color: $color-white;
 
   &--dropdown {
     background-image: url(../images/icons/dropdown.svg);
@@ -9,9 +10,13 @@
 
   &--menu {
     background-image: url(../images/icons/menu.svg);
+    width: 30px;
+    height: 30px;
   }
 
   &--close {
     background-image: url(../images/icons/close.svg);
+    width: 30px;
+    height: 30px;
   }
 }

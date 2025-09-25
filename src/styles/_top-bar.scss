@@ -29,7 +29,7 @@
     @include on-tablet {
       display: flex;
       flex-direction: row;
-      gap: 5;
+      gap: 5px;
     }
 
     &--options {
