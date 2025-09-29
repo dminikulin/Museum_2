@@ -2,21 +2,36 @@
   display: block;
   background-size: contain;
   background-position: center;
-  color: $color-white;
+  background-color: $color-white;
 
   &--dropdown {
-    background-image: url(../images/icons/dropdown.svg);
+    mask: url(../images/icons/dropdown.svg);
+    width: 10px;
+    height: 10px;
+    transition: transform $transition-time;
+
+    &--rotated {
+      transform: rotate(180deg);
+    }
   }
 
   &--menu {
-    background-image: url(../images/icons/menu.svg);
+    mask: url(../images/icons/menu.svg);
     width: 30px;
     height: 30px;
   }
 
   &--close {
-    background-image: url(../images/icons/close.svg);
+    mask: url(../images/icons/cross.svg);
     width: 30px;
     height: 30px;
+  }
+
+  &--arrow {
+    display: inline-block;
+    mask: url(../images/icons/arrow.svg);
+    background-color: currentColor;
+    width: 20px;
+    height: 20px;
   }
 }

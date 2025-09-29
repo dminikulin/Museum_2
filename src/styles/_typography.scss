@@ -26,6 +26,10 @@ h6 {
   &--main {
     @extend %main-text;
 
+    &:not(.section__current--text__date) {
+      align-self: start;
+    }
+
     &__bold {
       font-weight: 600;
     }
