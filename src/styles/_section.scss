@@ -1,7 +1,9 @@
 .section {
   width: 100%;
 
-  &[id='current'] {
+  &[id='current'],
+  &[id='plan'],
+  &[id='news'] {
     margin-top: 90px;
 
     @include on-tablet {
@@ -25,15 +27,17 @@
     }
   }
 
-  &[id='plan'] {
-    margin-top: 90px;
+  &[id='subscribe'] {
+    margin-top: 120px;
+    margin-bottom: 80px;
 
     @include on-tablet {
-      margin-top: 100px;
+      margin-top: 160px;
+      margin-bottom: 128px;
     }
 
     @include on-desktop {
-      margin-top: 110px;
+      margin-block: 200px;
     }
   }
 
@@ -59,8 +63,7 @@
 
   &__current {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 60px;
+    grid-template-rows: repeat(2, auto);
 
     @include on-tablet {
       grid-template-rows: none;
@@ -69,9 +72,20 @@
     }
 
     &--block {
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      height: 100%;
+      @include on-tablet {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100%;
+      }
+
+      &:last-of-type {
+        margin-top: 60px;
+        margin-bottom: 30px;
+
+        @include on-tablet {
+          margin-block: 0;
+        }
+      }
 
       button {
         width: 100%;
@@ -114,12 +128,20 @@
   &__events {
     display: flex;
     flex-direction: column;
-    gap: 60px;
 
     &--block {
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      &:last-of-type {
+        margin-top: 60px;
+        margin-bottom: 30px;
+
+        @include on-tablet {
+          margin-bottom: 0;
+        }
+      }
 
       @include on-tablet {
         flex-direction: row;
@@ -239,6 +261,107 @@
           width: 50%;
           margin-top: 50px;
         }
+      }
+    }
+  }
+
+  &__news {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+
+    @include on-tablet {
+      grid-template-rows: none;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+    }
+
+    &--block {
+      @include on-tablet {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100%;
+      }
+
+      &:last-of-type {
+        margin-top: 50px;
+        margin-bottom: 30px;
+
+        @include on-tablet {
+          margin-block: 0;
+        }
+      }
+    }
+
+    &--image {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &--text {
+      padding-top: 20px;
+
+      // padding-bottom: 30px;
+
+      p:last-child {
+        margin-top: 20px;
+      }
+    }
+
+    > button:last-of-type {
+      @include on-tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__subscribe {
+    display: flex;
+    flex-direction: column;
+
+    @include on-tablet {
+      width: 80%;
+    }
+
+    @include on-desktop {
+      width: 100%;
+    }
+
+    &--text {
+      display: grid;
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
+
+      @include on-desktop {
+        grid-template-rows: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+    }
+
+    input {
+      width: 100%;
+      margin-top: 50px;
+
+      @include on-tablet {
+        width: 75%;
+      }
+
+      @include on-desktop {
+        width: 40%;
+      }
+    }
+
+    button {
+      width: 100%;
+      margin-top: 30px;
+
+      @include on-tablet {
+        width: 70%;
+      }
+
+      @include on-desktop {
+        margin-top: 40px;
+        width: 40%;
       }
     }
   }

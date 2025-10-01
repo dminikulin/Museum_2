@@ -10,7 +10,7 @@
     height: 10px;
     transition: transform $transition-time;
 
-    &--rotated {
+    &:hover {
       transform: rotate(180deg);
     }
   }
@@ -33,5 +33,34 @@
     background-color: currentColor;
     width: 20px;
     height: 20px;
+  }
+
+  &--social-facebook {
+    width: 20px;
+    height: 20px;
+    mask: url(../images/icons/facebook.svg);
+  }
+
+  &--social-twitter {
+    width: 20px;
+    height: 20px;
+    mask: url(../images/icons/twitter.svg);
+  }
+
+  &--social-telegram {
+    width: 20px;
+    height: 20px;
+    mask: url(../images/icons/telegram.svg);
+  }
+
+  &--social-instagram {
+    width: 20px;
+    height: 20px;
+    mask: url(../images/icons/instagram.svg);
+  }
+
+  &--scroll-up {
+    mask: url(../images/icons/scroll\ up.svg);
+    width: 30px;
   }
 }

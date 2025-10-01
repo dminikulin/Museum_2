@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -13,7 +16,10 @@
     />
   </head>
   <body class="page__body">
-    <header class="header">
+    <header
+      class="header"
+      id="header"
+    >
       <div class="header__top">
         <div class="top-bar">
           <a
@@ -33,17 +39,7 @@
               aria-label="Change language"
             >
               <span id="lang-label">UA</span>
-              <a
-                href="#"
-                class="icon icon--dropdown"
-              ></a>
-              <ul
-                class="top-bar__language--options"
-                id="lang-options"
-              >
-                <li data-lang="UA">UA</li>
-                <li data-lang="EN">EN</li>
-              </ul>
+              <span class="icon icon--dropdown"></span>
             </div>
             <a
               href="#menu"
@@ -61,6 +57,10 @@
           </p>
           <button class="button button--primary">Купити квиток</button>
         </div>
+        <div class="header__content--date">
+          <h6>10.08 - 10.10</h6>
+          <hr />
+        </div>
         <img
           class="header__image"
           src="./images/header-img-2x.png"
@@ -68,8 +68,6 @@
         />
       </div>
     </header>
-
-    <div class="page__overlay"></div>
 
     <aside
       class="page__menu menu"
@@ -97,13 +95,6 @@
               href="#"
               class="icon icon--dropdown"
             ></a>
-            <ul
-              class="top-bar__language--options"
-              id="lang-options-menu"
-            >
-              <li data-lang="UA">UA</li>
-              <li data-lang="EN">EN</li>
-            </ul>
           </div>
           <a
             href="#"
@@ -130,7 +121,7 @@
               <li class="nav__item">
                 <h3>
                   <a
-                    href="#"
+                    href="#current"
                     class="nav__link"
                   >
                     Актуальні виставки
@@ -140,7 +131,7 @@
               <li class="nav__item">
                 <h3>
                   <a
-                    href="#"
+                    href="#events"
                     class="nav__link"
                   >
                     Найближчі події
@@ -150,7 +141,7 @@
               <li class="nav__item">
                 <h3>
                   <a
-                    href="#"
+                    href="#news"
                     class="nav__link"
                   >
                     Новини
@@ -169,6 +160,11 @@
         />
       </div>
     </aside>
+
+    <a
+      href="#"
+      class="page__overlay"
+    ></a>
 
     <main class="main">
       <section
@@ -302,9 +298,150 @@
           </div>
         </div>
       </section>
+
+      <section
+        class="section"
+        id="news"
+      >
+        <div class="section__top">
+          <h3>Новини</h3>
+          <button class="button button--secondary">
+            <span>Усі новини</span>
+            <span class="icon icon--arrow"></span>
+          </button>
+        </div>
+        <div class="section__news">
+          <div class="section__news--block">
+            <img
+              src="./images/postcards.png"
+              alt="sculpture"
+              class="section__news--image"
+            />
+            <div class="section__news--text">
+              <p class="text--main section__news--text__date">9 серпня 2019</p>
+              <h4>Оголошення переможця</h4>
+              <p class="text--main">
+                Друзі, сьогодні п'ятниця! А це означає, що час оголосити
+                переможця розіграшу...
+              </p>
+            </div>
+          </div>
+          <div class="section__news--block">
+            <img
+              src="./images/cat.png"
+              alt="sculpture"
+              class="section__news--image"
+            />
+            <div class="section__news--text">
+              <p class="text--main section__news--text__date">9 серпня 2019</p>
+              <h4>Міжнародний день котів</h4>
+              <p class="text--main">
+                Музей з левами не може просто так взяти і пропустити Міжнародний
+                день котів!
+              </p>
+            </div>
+          </div>
+          <button class="button button--secondary">
+            <span>Усі новини</span>
+            <span class="icon icon--arrow"></span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="section"
+        id="subscribe"
+      >
+        <div class="section__subscribe">
+          <div class="section__subscribe--text">
+            <h3>Підпишіться на дайджест</h3>
+            <p class="text--main">
+              Першими дізнавайтесь про новини музею та розіграші, отримуйте
+              запрошення на події та читайте статті від кураторів
+            </p>
+          </div>
+          <input
+            type="email"
+            placeholder="e-mail"
+          />
+          <button class="button button--primary">Підписатися</button>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__content--contacts">
+          <h4>Контакти</h4>
+          <p class="text--main">
+            Київ,
+            <br />
+            вул. М. Грушевського, 6
+            <br />
+            тел. 278-13-57, 278-74-54
+            <br />
+            info@namu.kiev.ua
+          </p>
+          <div class="footer__content--social">
+            <a
+              href="#"
+              class="icon icon--social-facebook"
+            ></a>
+            <a
+              href="#"
+              class="icon icon--social-twitter"
+            ></a>
+            <a
+              href="#"
+              class="icon icon--social-telegram"
+            ></a>
+            <a
+              href="#"
+              class="icon icon--social-instagram"
+            ></a>
+          </div>
+        </div>
+        <div class="footer__content--schedule">
+          <h4>Розклад роботи</h4>
+          <p class="text--main">
+            ПН: вихідний
+            <br />
+            ВТ: вихідний
+            <br />
+            СР: 10:00 - 17:00
+            <br />
+            ЧТ: 10:00 - 17:00
+            <br />
+            ПТ: 12:00 - 19:00
+            <br />
+            СБ: 11:00 - 18:00
+            <br />
+            НД: 10:00 - 17:00
+          </p>
+        </div>
+        <div class="footer__content--nav">
+          <h4>Головна</h4>
+          <nav>
+            <a href="#current">Виставки</a>
+            <a href="#events">Події</a>
+            <a href="#news">Новини</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="text--main">© 2010 — 2020</p>
+        <a
+          href="#"
+          class="text--main"
+        >
+          Privacy — Terms
+        </a>
+        <a
+          href="#header"
+          class="icon icon--scroll-up"
+        ></a>
+      </div>
+    </footer>
     <script src="scripts/main.js"></script>
   </body>
 </html>

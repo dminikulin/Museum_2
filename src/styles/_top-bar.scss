@@ -37,45 +37,6 @@
       align-items: center;
       gap: 5px;
       padding-inline: 5px;
-      cursor: pointer;
-    }
-
-    &--options {
-      width: max-content;
-      min-width: 0;
-      background: #313a3a;
-      border-radius: 5px;
-      box-shadow: 1px 1px 5px $color-black;
-      margin: 0;
-      padding: 0;
-      color: $color-white;
-      position: absolute;
-      top: 25px;
-      right: 0;
-      left: 0;
-      list-style: none;
-      opacity: 0;
-      visibility: hidden;
-
-      transition:
-        opacity $transition-time,
-        visibility $transition-time;
-
-      li {
-        width: auto;
-        padding: 5px 10px;
-
-        &:not(:last-child) {
-          border-bottom: 1px solid $color-white; // horizontal separator line
-        }
-      }
-    }
-
-    &--active {
-      .top-bar__language--options {
-        opacity: 1;
-        visibility: visible;
-      }
     }
   }
 

@@ -149,3 +149,31 @@
     color: #dd836f;
   }
 }
+
+%input {
+  margin: 0;
+  padding: 0;
+  padding-block: 3px;
+  border: none;
+  border-bottom: 1px solid $color-black;
+
+  transition: all $transition-time;
+
+  &:hover,
+  &:active {
+    border-color: $color-main;
+
+    &::placeholder {
+      color: $color-main;
+    }
+  }
+
+  &:not(:placeholder-shown) {
+    font-weight: bold;
+  }
+
+  &::placeholder {
+    color: $color-black;
+    transition: all $transition-time;
+  }
+}
