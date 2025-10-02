@@ -99,6 +99,11 @@
     &--image {
       width: 100%;
       object-fit: cover;
+      transition: transform $transition-time;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     &--text {
@@ -157,6 +162,11 @@
       height: auto;
       width: 100%;
       object-fit: contain;
+      transition: transform $transition-time;
+
+      &:hover {
+        transform: scale(1.05);
+      }
 
       @include on-tablet {
         width: 330px;
@@ -222,6 +232,11 @@
 
     &--image {
       display: none;
+      transition: transform $transition-time;
+
+      &:hover {
+        transform: scale(1.05);
+      }
 
       @include on-desktop {
         display: block;
@@ -295,6 +310,11 @@
     &--image {
       width: 100%;
       object-fit: cover;
+      transition: transform $transition-time;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     &--text {

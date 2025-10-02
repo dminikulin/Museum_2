@@ -19,12 +19,22 @@
     mask: url(../images/icons/menu.svg);
     width: 30px;
     height: 30px;
+    transition: transform $transition-time;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &--close {
     mask: url(../images/icons/cross.svg);
     width: 30px;
     height: 30px;
+    transition: transform $transition-time;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &--arrow {
