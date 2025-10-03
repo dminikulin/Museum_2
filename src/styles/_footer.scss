@@ -66,9 +66,16 @@
       height: auto;
       gap: 20px;
       margin-top: 30px;
+      color: $color-white;
 
       @include on-desktop {
         margin-top: 50px;
+      }
+
+      a {
+        display: block;
+        width: 20px;
+        height: 20px;
       }
     }
 
